@@ -1,0 +1,30 @@
+ifdef::env-github[]
+:relfileprefix: 
+:relfilesuffix: .adoc
+xref:index.adoc[Index]
+endif::[]
+
+= Abstraction Layer
+
+IOTICS can be used an abstraction layer, where twins provide an asset focussed and data-centric view of the underlying systems.
+
+In the most basic implementation, a single connector may integrate multiple systems into IOTICS and manage the twins but, in general, there may be multiple connectors.
+
+image::images/abstraction_layer.png{relfilesuffix}[Abstraction Layer]
+
+xref:{relfileprefix}abstraction_layer{relfilesuffix}[Abstraction layer] is a basic implementation of the FAIR data principles applied to assets' data;
+or, in other words, assets become FAIR.
+This pattern is the simplest application pattern that enables other more sophisticated patterns.
+With this pattern alone, the ecosystem doesn't grow because data isn't fed back into IOTICS, but even limiting applications to only implement this pattern, users will massively benefit, over more traditional Big Data applications, by having assets' data available.
+
+== When to use it
+
+xref:{relfileprefix}abstraction_layer{relfilesuffix}[Abstraction Layer] promotes IOTICS' data-centric approach whereby data is at the core of the application.
+Applications that want to use data abstracted as IOTICS Digital Twins will manifest in IOTICS as xref:{relfileprefix}follower_twin{relfilesuffix}[Follower Twin]s and use xref:{relfileprefix}find_and_bind{relfilesuffix}[Find And Bind] to access the data.
+
+== Related patterns
+
+* xref:{relfileprefix}follower_twin{relfilesuffix}[Follower Twin]
+* xref:{relfileprefix}publisher_twin{relfilesuffix}[Publisher Twin]
+* xref:{relfileprefix}dataset_twin{relfilesuffix}[Dataset Twin]
+

@@ -1,0 +1,73 @@
+ifdef::env-github[]
+:relfileprefix: 
+:relfilesuffix: .adoc
+xref:index.adoc[Index]
+endif::[]
+
+= Linked Twins
+
+WARNING: This is work in progress and not yet supported by IOTICSpace.
+
+Being able to link twins to other resources is fundamental to put the twin in context with other objects, in order to extract richer information.
+This is a series of patterns documenting how twins can be linked.
+
+Linking is achieved by setting one or more properties whose object is an URI
+
+ <did:iotics:iot12345678909876543df>
+     <property name> <URI>
+
+The `<property name>` is a URL to a definition part of an ontology.
+This definition expresses the meaning of the link.
+The `<URI>` is a globally resolvable link to the object the twin is linked to.
+The problem of defining relationships in RDF is well understood and discussed: how to represent https://www.w3.org/TR/swbp-n-aryRelations/[n-ary relations] or how to represent https://www.w3.org/2001/sw/BestPractices/OEP/SimplePartWhole/[part-whole relationships].
+
+Here we will only address the mechanics of linking two twins, or in other words, when `<URI>` is:
+
+* The DID of another twin
+* The value of a property of another twin that is considered a "natural key" for the linked object
+
+For example, let's say we have two twins:
+
+....
+<did:iotics:iot12345678909876543df>
+    ...
+.
+
+<did:iotics:iotiuyfghu87654edghu876>
+    http://some.ont/serial_number "serial123"
+    ...
+.
+....
+
+== Link twins by their identity
+
+Each digital twin has a single and globally resolvable identity expressed as a DID.
+A twin can be linked to another twin by expressing a property whose object is another twin's DID
+
+ <did:iotics:iot12345678909876543df>
+     ...
+     <http://some.ont/linked_to_twin> "<did:iotics:iotiuyfghu87654edghu876>"
+     ...
+ .
+
+In this example, the semantic of `+<http://some.ont/linked_to_twin>+` determines that the object value is another twin.
+
+== Link twins via natural key
+
+A digital twin may express a property representing a natural key for the twin.
+For example, a device serial number.
+
+ <did:iotics:iot12345678909876543df>
+     ...
+     <http://some.ont/linked_to> "serial123"
+     ...
+ .
+
+For this case to work, we could define a property for the `rdfs:property` as:
+
+ <http://some.ont/linked_to>
+     ...
+     <http://some.ont/reference_property> <http://some.ont/serial_number>
+     ...
+ .
+

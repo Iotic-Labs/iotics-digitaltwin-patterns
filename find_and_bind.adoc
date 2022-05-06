@@ -1,0 +1,44 @@
+ifdef::env-github[]
+:relfileprefix: 
+:relfilesuffix: .adoc
+xref:index.adoc[Index]
+endif::[]
+
+= Find and Bind
+
+WARNING: This is work in progress and not yet supported by IOTICSpace.
+
+Find and bind is the basic data access pattern that a xref:{relfileprefix}follower_twin[Follower Twin] implements to discover one or more twins of interest.
+
+The pattern can be implemented as
+
+ foreach twin in search_by(properties, location):
+     description = describe(twin_did)
+     if description is of_interest:
+         foreach feed in twin:
+             if feed of_interest:
+                 follow(twin_did, feed)
+
+In essence, the "find and bind" leverages the semantically enriched metadata of the twins to retrieve twins' descriptions.
+
+Twins' feeds can then be followed provided that the interaction between the follower and the twin of the feed can be "brokered".
+
+== Implementation details
+
+The algorithm expressed above is very generic.
+A solid and robust find and bind implementation must take into account the following concerns:
+
+* _twins can change_: once a twin's been found, it can be described by DID.
+Because the DID is globally resolvable, subsequent `describe` requests will work until the twin is deleted
+* _subscriptions are ephemeral_: a subscription to a feed can drop for a variety of reasons.
+The same `follow` request can be re-issued.
+Reasons for subscriptions to drop may include
+ ** the twin has moved host
+ ** the twin permissions have changed and the twin is no longer accessible
+ ** any network glitch stopping the connection to the local host (transient or not)
+
+== Related patterns
+
+* xref:{relfileprefix}follower_twin{relfilesuffix}[Follower Twin]
+* xref:{relfileprefix}data_interaction_twin{relfilesuffix}[Data Interaction Twin]
+

@@ -1,0 +1,74 @@
+ifdef::env-github[]
+:relfileprefix: 
+:relfilesuffix: .adoc
+xref:index.adoc[Index]
+endif::[]
+
+== About this repository
+
+https://iotics.com[IOTICS] enables things in the real world to interoperate with each other by exchanging data and input commands. These things can belong to anyone and be deployed anywhere in the "real" world - real is not necessarily the "physical" world, in the sense of objects: for example things can be software processes or even records in a database.
+The way IOTICS does it is by mediating the interactions via "digital twins" of the real things.
+
+Digital twins are made in software, so it's possible to discover patterns on how best to engineer or use IOTICS' technology to best implement useful and meaningful applications.
+
+== What are design patterns
+
+Software design and architectural patterns are reusable solutions applicable to common scenarios.
+Patterns don't necessarily map exactly to executable code but offer guidance and a common language when designing or architecting software solutions.
+
+== IOTICS patterns
+
+IOTICS offers a novel approach to asset focussed data sharing, based on three basic concepts: virtualisation, symmetry and secure interactions.
+Every real asset (anything from physical objects, systems, software processes to any generic data sink or data source) can be virtualised and made a "digital twin".
+Assets that want to exchange data and, ultimately, autonomously interoperate, do it so by means of their digital twins.
+And the actual exchange happens once the interaction between the two twins has been brokered and secured.
+
+This list of patterns offer guidance on how to design and architect applications that leverage IOTICS's unique capabilities.
+
+== IOTICS list of patterns
+
+The following patterns are grouped by the following categories:
+
+=== Twin role patterns
+
+These patterns describe the role twins may play in applications:
+
+* xref:{relfileprefix}publisher_twin{relfilesuffix}[Publisher Twin]: a twin that publishes data via feeds (a data source)
+* xref:{relfileprefix}follower_twin{relfilesuffix}[Follower Twin]: a twin that subscribes to feed data from other twins (a data sink)
+* xref:{relfileprefix}synthesiser_twin{relfilesuffix}[Synthesiser Twin]: a twin that creates new feeds according to custom logic within the agent
+* xref:{relfileprefix}dataset_twin{relfilesuffix}[Dataset Twin]: a twin without feeds representing a "data set" or aggregation of records
+* xref:{relfileprefix}versioned_dataset_twin{relfilesuffix}[Versioned Dataset Twin]: a twin of a versioned dataset with links to the previous versions
+* xref:{relfileprefix}splitter_twin{relfilesuffix}[Splitter Twin]: a twin representing the feed of another twin.
+* xref:{relfileprefix}aggregator_twin{relfilesuffix}[Aggregator Twin]: a twin aggregating feeds of many other twins into a single twin
+* xref:{relfileprefix}shadow_twin{relfilesuffix}[Shadow Twin]: a twin replicating the metadata and feeds of another twin
+
+=== Twin structure patterns
+
+These patterns describe how twins can be structured to fulfill their role
+
+* xref:{relfileprefix}the_comb{relfilesuffix}[The Comb]: a twin with lots of feeds, with each feed having a single value
+* xref:{relfileprefix}the_brush{relfilesuffix}[The Brush]: a twin with a single feed having many values
+* xref:{relfileprefix}data_bypass{relfilesuffix}[Data Bypass]: a twin with a metadata attribute with value equal to a link to a data set or data source external to IOTICS
+* xref:{relfileprefix}asset_as_graph{relfilesuffix}[Asset As Graph]: asset modelled as a graph of linked twins
+* xref:{relfileprefix}assets_as_twin{relfilesuffix}[Assets As Twin]: multiple real assets represented by a single twin.
+* xref:{relfileprefix}linked_twins{relfilesuffix}[Linked Twins]: how to link two twins semantically
+
+=== Twin utilisation patterns
+
+These patterns describe ways of utilising twins to implement basic functionalities
+
+* xref:{relfileprefix}find_and_bind{relfilesuffix}[Find And Bind]: how can a twin find the assets he cares about and how does it get their data
+* xref:{relfileprefix}share_code{relfilesuffix}[Share Code]: extracting information from other twins when data sharing isn't possible
+* xref:{relfileprefix}twin_sharding{relfilesuffix}[Twin Sharding]: improve performance by separating twins in different hosts
+* xref:{relfileprefix}twin_resiliency{relfilesuffix}[Twin Resiliency]: improve resiliency of a twin by deploying twins in different hosts
+* xref:{relfileprefix}data_interaction_twin{relfilesuffix}[Data Interaction]: Dynamic ELT with twins
+
+=== Application architecture patterns
+
+These patterns describe how complex applications can be architected
+
+* xref:{relfileprefix}connector{relfilesuffix}[Connector]: optimising the implementation of twins' agents
+* xref:{relfileprefix}abstraction_layer{relfilesuffix}[Abstraction Layer]: sanitise the unruly mess into a nice and coherent set of twins
+* xref:{relfileprefix}hub_and_spoke{relfilesuffix}[Hub And Spoke]: a twin to carry the use case
+* xref:{relfileprefix}mesh{relfilesuffix}[Mesh]: all twins are equal
+* xref:{relfileprefix}data_marketplace{relfilesuffix}[Data Marketplace]: stalls for cabbage, tomatoes, apples

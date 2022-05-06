@@ -1,0 +1,132 @@
+:doctitle: IOTICS design and architectural patterns
+:revnumber: 0.0.1
+:keywords: IOTICS, Architecture, Patterns
+:page-keywords: {keywords}
+:page-layout: docs
+:uri-project-repo: https://github.com/Iotic-Labs/dev-adoc-architecture/modules/arch-doc
+:reproducible:
+:listing-caption: Listing
+:source-highlighter: rouge
+:toc2:
+:toclevels: 3
+:data-uri:
+
+
+ifdef::env-github[]
+:relfileprefix: 
+:relfilesuffix: .adoc
+endif::[]
+
+ifndef::env-github[]
+:relfileprefix: _
+:relfilesuffix: 
+endif::[]
+
+ifdef::env-github[]
+== About this document
+* xref:{relfileprefix}about_this_document[About this document]
+endif::[]
+
+ifndef::env-github[]
+include::about_this_document.adoc[]
+endif::[]
+
+== Patterns
+
+=== Twin role patterns
+
+:leveloffset: +3
+
+ifdef::env-github[]
+* xref:{relfileprefix}publisher_twin{relfilesuffix}[Publisher Twin]
+* xref:{relfileprefix}follower_twin{relfilesuffix}[Follower Twin]
+* xref:{relfileprefix}synthesiser_twin{relfilesuffix}[Synthesiser Twin]
+* xref:{relfileprefix}dataset_twin{relfilesuffix}[Dataset Twin]
+* xref:{relfileprefix}versioned_dataset_twin{relfilesuffix}[Versioned Dataset Twin]
+* xref:{relfileprefix}splitter_twin{relfilesuffix}[Splitter Twin]
+* xref:{relfileprefix}aggregator_twin{relfilesuffix}[Aggregator Twin]
+* xref:{relfileprefix}shadow_twin{relfilesuffix}[Shadow Twin]
+* xref:{relfileprefix}lintball_twin{relfilesuffix}[Lintball Twin]
+endif::[]
+
+ifndef::env-github[]
+include::publisher_twin.adoc[]
+include::follower_twin.adoc[]
+include::synthesiser_twin.adoc[]
+include::dataset_twin.adoc[]
+include::versioned_dataset_twin.adoc[]
+include::splitter_twin.adoc[]
+include::aggregator_twin.adoc[]
+include::shadow_twin.adoc[]
+include::lintball_twin.adoc[]
+endif::[]
+
+:leveloffset: -3
+
+=== Twin structure patterns
+
+:leveloffset: +3
+
+ifdef::env-github[]
+* xref:{relfileprefix}the_comb{relfilesuffix}[The Comb]
+* xref:{relfileprefix}the_brush{relfilesuffix}[The Brush]
+* xref:{relfileprefix}data_bypass{relfilesuffix}[Data Bypass]
+* xref:{relfileprefix}asset_as_graph{relfilesuffix}[Asset As Graph]
+* xref:{relfileprefix}assets_as_twin{relfilesuffix}[Asset As Twin]
+* xref:{relfileprefix}linked_twins{relfilesuffix}[Linked Twins]
+endif::[]
+
+ifndef::env-github[]
+include::the_comb.adoc[]
+include::the_brush.adoc[]
+include::data_bypass.adoc[]
+include::asset_as_graph.adoc[]
+include::assets_as_twin.adoc[]
+include::linked_twins.adoc[]
+endif::[]
+
+:leveloffset: -3
+
+=== Twin utilisation patterns
+
+:leveloffset: +3
+
+ifdef::env-github[]
+* xref:{relfileprefix}find_and_bind{relfilesuffix}[Find And Bind]
+* xref:{relfileprefix}share_code{relfilesuffix}[Share Code]
+* xref:{relfileprefix}twin_sharding{relfilesuffix}[Twin Sharding]
+* xref:{relfileprefix}twin_resiliency{relfilesuffix}[Twin Resiliency]
+* xref:{relfileprefix}data_interaction{relfilesuffix}[Data Interactions]
+endif::[]
+
+ifndef::env-github[]
+include::find_and_bind.adoc[]
+include::share_code.adoc[]
+include::twin_sharding.adoc[]
+include::twin_resiliency.adoc[]
+include::data_interaction.adoc[]
+endif::[]
+
+:leveloffset: -3
+
+=== Application architecture patterns
+
+:leveloffset: +3
+
+ifdef::env-github[]
+* xref:{relfileprefix}connector{relfilesuffix}[Connector]
+* xref:{relfileprefix}abstraction_layer{relfilesuffix}[Abstraction Layer]
+* xref:{relfileprefix}hub_and_spoke{relfilesuffix}[Hub And Spoke]
+* xref:{relfileprefix}mesh{relfilesuffix}[Mesh]
+* xref:{relfileprefix}data_marketplace{relfilesuffix}[Data Marketplace]
+endif::[]
+
+ifndef::env-github[]
+include::connector.adoc[]
+include::abstraction_layer.adoc[]
+include::hub_and_spoke.adoc[]
+include::mesh.adoc[]
+include::data_marketplace.adoc[]
+endif::[]
+
+:leveloffset: -3
