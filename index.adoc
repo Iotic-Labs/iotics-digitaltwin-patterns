@@ -24,7 +24,7 @@ endif::[]
 
 ifdef::env-github[]
 == About this document
-* xref:{relfileprefix}about_this_document[About this document]
+* xref:{relfileprefix}about_this_document{relfilesuffix}[About this document]
 endif::[]
 
 ifndef::env-github[]
