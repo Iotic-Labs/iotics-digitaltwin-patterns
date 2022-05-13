@@ -11,11 +11,11 @@ For example an enterprise may have data about an asset in the manufacturing data
 
 image::images/asset_aggregator_twin.png[Asset Aggregator Twin]
 
-This differs from the xref:{relfileprefix}master_asset_twin{relfilesuffix}[Master Asset Twin] in that ownership of the underlying data is not spread across multiple entities.
+This differs from the xref:{relfileprefix}master_asset_twin{relfilesuffix}[Master Asset Twin] in that ownership of the underlying data is not spread across multiple organisations.
 
 == When to use it
 
-This pattern can be to provide an abstraction layer and an asset focussed view of the data in those cases where accessing such data requires integrating with various systems with different APIs. The asset aggregator twin provides a single pane of glass into the asset, a normalised and reusable interface.
+This pattern can used be to provide an abstraction layer and an asset focussed view of the data in those cases where accessing such data requires integrating with various systems with different APIs. The asset aggregator twin provides a single pane of glass into the asset, a normalised and reusable interface.
 
 == Related patterns
 
