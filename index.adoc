@@ -59,6 +59,8 @@ include::splitter_twin.adoc[]
 include::aggregator_twin.adoc[]
 include::shadow_twin.adoc[]
 include::lintball_twin.adoc[]
+include::asset_aggregator_twin.adoc[]
+include::master_asset_twin.adoc[]
 endif::[]
 
 :leveloffset: -3
