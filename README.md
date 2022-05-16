@@ -31,7 +31,18 @@ ifndef::env-github[]
 endif::[]
 ```
 
+
+## Versioning
+
+The book uses git tags as versioning mechanism. The current version is also stored in `index.adoc` in the `:revnumber:` property. The script `bin/version.sh` can help creating a new version of the book sources.
+
+This book uses semantic versioning as following:
+
+* the major version should be increased when existing patterns are changed or the amount changes in the book warrants a new edition.
+* the minor version should be increased when new patterns are added or existing are substantially modified (still retaining the same semantic).
+* the build version should be increased for typos or small changes not needing users to get a newer version of the book.
+
 ## Versions log
 
-* Version 1.0: initial draft, reviewed and approved.
-* Version 1.1: added "Asset Aggregator Twin" and "Master Asset Twin" patterns.
+* Version 1.0.0: initial draft, reviewed and approved.
+* Version 1.1.0: added "Asset Aggregator Twin" and "Master Asset Twin" patterns.
