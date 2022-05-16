@@ -1,5 +1,5 @@
 :doctitle: IOTICS design and architectural patterns
-:revnumber: 0.0.1
+:revnumber: v1.1.1
 :keywords: IOTICS, Architecture, Patterns
 :page-keywords: {keywords}
 :page-layout: docs
