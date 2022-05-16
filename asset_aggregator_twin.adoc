@@ -15,9 +15,14 @@ This differs from the xref:{relfileprefix}master_asset_twin{relfilesuffix}[Maste
 
 == When to use it
 
-This pattern can used be to provide an abstraction layer and an asset focussed view of the data in those cases where accessing such data requires integrating with various systems with different APIs. The asset aggregator twin provides a single pane of glass into the asset, a normalised and reusable interface.
+This pattern can be used to provide an abstraction layer and an asset focussed view of the asset's data in those cases where accessing such data requires integrating with various systems with different APIs. The asset aggregator twin provides a single pane of glass into the asset, a normalised and reusable interface.
+
+Furthermore, any new data associated to the asset can be added incrementally and iteratively without disrupting existing applications (see xref:{relfileprefix}lintball_twin{relfilesuffix}[Lintball Twin]).
+
+
 
 == Related patterns
 
 * xref:{relfileprefix}asset_as_graph{relfilesuffix}[Asset as Graph]
 * xref:{relfileprefix}master_asset_twin{relfilesuffix}[Master Asset Twin]
+* xref:{relfileprefix}lintball_twin{relfilesuffix}[Lintball Twin]
