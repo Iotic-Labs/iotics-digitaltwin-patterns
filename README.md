@@ -1,4 +1,4 @@
-# IOTICS utilisation patterns
+# IOTICS Digital Twin Patterns
 
 This repo collects some of the most common utilisation patters of IOTICS.
 The content is written in asciidoc and packaged to be rendered as a single book whose entry is [index.adoc](index.adoc)
@@ -30,3 +30,8 @@ ifndef::env-github[]
 :relfilesuffix: 
 endif::[]
 ```
+
+## Versions log
+
+* Version 1.0: initial draft, reviewed and approved.
+* Version 1.1: added "Asset Aggregator Twin" and "Master Asset Twin" patterns.
