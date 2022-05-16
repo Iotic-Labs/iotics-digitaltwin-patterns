@@ -46,3 +46,4 @@ This book uses semantic versioning as following:
 
 * Version 1.0.0: initial draft, reviewed and approved.
 * Version 1.1.0: added "Asset Aggregator Twin" and "Master Asset Twin" patterns.
+* Version 1.1.1: added versioning script and instructions on versioning scheme.
