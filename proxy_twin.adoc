@@ -1,0 +1,25 @@
+ifdef::env-github[]
+:relfileprefix: 
+:relfilesuffix: .adoc
+xref:index.adoc[Index]
+endif::[]
+
+= Proxy Twin
+
+A proxy twin is a twin that has feeds publishing data.
+It doesn't have inputs to receive commands.
+It follows at least one other twin but instead of synthesising the data, 
+it simply republishes the same data feed.
+
+image::images/proxy_twin.png[Proxy Twin]
+
+== When to use it
+
+* Use it when you want to aggregate data feeds & republish them, as is, on a single twin. This could be for:
+** ease of management - a single public (to the Iotics network) twin, aggregating private twin feeds;
+** content grouping for discoverability - related feeds in one place.
+
+== Related patterns
+
+* xref:{relfileprefix}aggregator_twin{relfilesuffix}[Aggregator Twin]
+* xref:{relfileprefix}shadow_twin{relfilesuffix}[Shadow Twin]

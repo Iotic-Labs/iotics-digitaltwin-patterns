@@ -47,6 +47,9 @@ ifdef::env-github[]
 * xref:{relfileprefix}aggregator_twin{relfilesuffix}[Aggregator Twin]
 * xref:{relfileprefix}shadow_twin{relfilesuffix}[Shadow Twin]
 * xref:{relfileprefix}lintball_twin{relfilesuffix}[Lintball Twin]
+* xref:{relfileprefix}asset_aggregator_twin{relfilesuffix}[Asset Aggregator Twin]
+* xref:{relfileprefix}master_asset_twin{relfilesuffix}[Master Asset Twin]
+* xref:{relfileprefix}proxy_twin{relfilesuffix}[Proxy Twin]
 endif::[]
 
 ifndef::env-github[]
@@ -61,6 +64,7 @@ include::shadow_twin.adoc[]
 include::lintball_twin.adoc[]
 include::asset_aggregator_twin.adoc[]
 include::master_asset_twin.adoc[]
+include::proxy_twin.adoc[]
 endif::[]
 
 :leveloffset: -3
