@@ -6,7 +6,7 @@ endif::[]
 
 = Find and Bind
 
-WARNING: This is work in progress and not yet supported by IOTICSpace.
+WARNING: This is work in progress and not yet fully supported by IOTICSpace.
 
 Find and bind is the basic data access pattern that a xref:{relfileprefix}follower_twin[Follower Twin] implements to discover one or more twins of interest.
 
@@ -22,6 +22,29 @@ The pattern can be implemented as
 In essence, the "find and bind" leverages the semantically enriched metadata of the twins to retrieve twins' descriptions.
 
 Twins' feeds can then be followed provided that the interaction between the follower and the twin of the feed can be "brokered".
+
+== Data and metadata
+
+A twin's metadata is a collection of information about the asset a twin represents. 
+
+=== Metadata: find
+
+* can be queried to determine whether a twin is interesting/useful or not,
+* cab be linked to other metadata to provide semantic relationships between twins,
+
+Metadata is stored in IOTICS and forms, as a whole, a knowledge graph that can be queried or explored.
+Ultimately, IOTICS provides the (decentralised) register that can be queried to find the desired assets. Metadata is open and accessible to everybody. When a twin limits access to its metadata is because it wants to restrict who can find it.
+
+
+=== Data: bind
+
+Binding to a twin is about getting the asset data. Data - unlike metadata - represents internal status of the asset and it's protected by the "secure and brokered interactions".
+Access to data follows two access paradigm: push and pull:
+
+* a push mechanism models events or changes in some of the asset's internal status data,
+* a pull mechanism models a basic retrieval mechanism of (one or more) attributes of the asset internal status. 
+
+A twin's push mechanism is implemented by feeds. A twin's pull mechanism is WIP. 
 
 == Implementation details
 

@@ -13,8 +13,9 @@ Digital twins are made in software, so it's possible to discover patterns on how
 
 == What are design patterns
 
-Software design and architectural patterns are reusable solutions applicable to common scenarios.
+Software design and architectural patterns are reusable solutions applicable to common scenarios. 
 Patterns don't necessarily map exactly to executable code but offer guidance and a common language when designing or architecting software solutions.
+Patterns are not exclusive, in that, a real solution is often a combination of one or more patterns that may evolve over time.
 
 == IOTICS patterns
 
