@@ -6,8 +6,6 @@ endif::[]
 
 = Data Bypass
 
-WARNING: This is work in progress and not yet supported by IOTICSpace.
-
 Data bypass is a pattern https://www.eclipse.org/ditto/advanced-data-by-pass.html[introduced by Eclipse Ditto].
 The idea is to provide access to data out-of-band in those situations where in-band transfer is not appropriate for performance or security reasons.
 
@@ -15,8 +13,8 @@ image::images/data_bypass.png[Data Bypass]
 
 The mechanics work as follows:
 
-. Agent of Twin 2 sends control command on a nominated input of Twin 1.
- ** The command models a request to the underlying data according to the semantic properties available in the input
+. Agent of Twin 2 sends a control message on a nominated input of Twin 1.
+ ** The message models a request to the underlying data according to the semantic properties available in the input
  ** The sender must specify a _reply to_ input for the response to be replied to
 . The request is relayed to the Twin 1's agent for processing
 . The agent generates a one-time access URI for the incoming requestor
