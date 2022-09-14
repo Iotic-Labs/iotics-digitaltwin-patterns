@@ -25,6 +25,8 @@ The processing of the inputs may be modelled as a function whose output is the v
 
 image::images/data_interaction_f.png[Data Interaction Feed]
 
+in the example in picture, the data interaction twin is following feeds F1 to FN, for each feed it's mapping the payloads `{v=data}` into m Feeds representing interaction function Fa to Fm. The generic F function maps the values in the payloads of F1..N into a single value. 
+
 == When to use it
 
 A data interaction is the most generic way to implement ELT pipelines into IOTICS where the outcome needs to be published back into IOTICS for others to consume.
