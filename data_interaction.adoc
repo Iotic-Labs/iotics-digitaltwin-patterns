@@ -21,11 +21,11 @@ The find and bind part follows this algorithm:
  ** for each new twin found: follow all the feeds of interest
  ** for each known twin not found in the search: un-follow all its feeds
 
-The processing of the inputs may be modelled as a function whose output is the value to be published in the mapped feed:
+In the example in picture, the data interaction twin is following feeds F1 to FN, for each feed it's mapping the payloads `{v=data}` into m Feeds representing interaction function Fa to Fm. The generic F function maps the values in the payloads of F1..N into a single value. 
+
+Or in more general terms, the processing of the inputs may be modelled as a function whose output is the value to be published in the mapped feed:
 
 image::images/data_interaction_f.png[Data Interaction Feed]
-
-in the example in picture, the data interaction twin is following feeds F1 to FN, for each feed it's mapping the payloads `{v=data}` into m Feeds representing interaction function Fa to Fm. The generic F function maps the values in the payloads of F1..N into a single value. 
 
 == When to use it
 
