@@ -10,7 +10,7 @@ IOTICS can be used an abstraction layer, where twins provide an asset focussed a
 
 In the most basic implementation, a single connector may integrate multiple systems into IOTICS and manage the twins but, in general, there may be multiple connectors.
 
-image::images/abstraction_layer.png{relfilesuffix}[Abstraction Layer]
+image::images/abstraction_layer.png[Abstraction Layer]
 
 xref:{relfileprefix}abstraction_layer{relfilesuffix}[Abstraction layer] is a basic implementation of the FAIR data principles applied to assets' data;
 or, in other words, assets become FAIR.
