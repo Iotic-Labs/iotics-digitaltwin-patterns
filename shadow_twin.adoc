@@ -23,6 +23,8 @@ a twin can be deployed on edge with feeds emitting at a large frequency for loca
 a shadow twin can be deployed on edge to shadow the twin but with throttling behaviour
 to limit the amount of data to remote followers.
 
+Or, to simply re-deploy a new twin in a space or network without having to re-deploy the agent.
+
 In the context of security, shadow twins can be used to partition security and access control to feeds selectively.
 
 == Related patterns
