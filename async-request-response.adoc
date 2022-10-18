@@ -6,6 +6,8 @@ endif::[]
 
 = Async request-response
 
+WORK IN PROGRESS
+
 IOTICS Twins' inputs can be used to model any async request/response.
 
 1. A requestor twin specifies a "response input"
