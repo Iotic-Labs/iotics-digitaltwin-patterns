@@ -1,0 +1,18 @@
+ifdef::env-github[]
+:relfileprefix: 
+:relfilesuffix: .adoc
+xref:index.adoc[Index]
+endif::[]
+
+= Async request-response
+
+IOTICS Twins' inputs can be used to model any async request/response.
+
+1. A requestor twin specifies a "response input"
+1. A responder twin specifies a "request input"; the payload for the request command is specified semantically as a set of key/value/unit triples. The payload must allow for specifying the link to the "response input" and a response reference.
+1. The requestor sends the request to the "request input"
+1. The responder sends the response to the "response input"
+
+Multiple responses can be sent to the "response input" each with their own sequence number
+
+In case the response has a stream semantic (hence the request command is a subscription), the responder must allow a request command for unsubscribe.
