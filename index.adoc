@@ -99,6 +99,8 @@ ifdef::env-github[]
 * xref:{relfileprefix}twin_sharding{relfilesuffix}[Twin Sharding]
 * xref:{relfileprefix}twin_resiliency{relfilesuffix}[Twin Resiliency]
 * xref:{relfileprefix}data_interaction{relfilesuffix}[Data Interactions]
+* xref:{relfileprefix}async-request-response.adoc{relfilesuffix}[Async Request/Response]
+
 endif::[]
 
 ifndef::env-github[]
