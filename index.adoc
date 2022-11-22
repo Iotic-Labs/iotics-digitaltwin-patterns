@@ -89,7 +89,7 @@ endif::[]
 
 :leveloffset: -3
 
-=== Twin utilisation patterns
+=== Utilisation patterns
 
 :leveloffset: +3
 
