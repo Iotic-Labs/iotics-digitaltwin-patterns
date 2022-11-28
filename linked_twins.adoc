@@ -11,14 +11,15 @@ WARNING: This is work in progress and not yet supported by IOTICSpace.
 Being able to link twins to other resources is fundamental to put the twin in context with other objects, in order to extract richer information.
 This is a series of patterns documenting how twins can be linked.
 
+IOTICS builds on the concept of linked data as described here https://www.w3.org/DesignIssues/LinkedData.html
+
 Linking is achieved by setting one or more properties whose object is an URI
 
  <did:iotics:iot12345678909876543df>
      <property name> <URI>
 
-The `<property name>` is a URL to a definition part of an ontology.
-This definition expresses the meaning of the link.
-The `<URI>` is a globally resolvable link to the object the twin is linked to.
+The `<property name>` is a URI and it's meant to be uniqe and possibly defined within an ontology. This definition expresses the meaning of the link.
+The `<URI>` is a the unique name of the object the twin is linked to.
 The problem of defining relationships in RDF is well understood and discussed: how to represent https://www.w3.org/TR/swbp-n-aryRelations/[n-ary relations] or how to represent https://www.w3.org/2001/sw/BestPractices/OEP/SimplePartWhole/[part-whole relationships].
 
 Here we will only address the mechanics of linking two twins, or in other words, when `<URI>` is:
