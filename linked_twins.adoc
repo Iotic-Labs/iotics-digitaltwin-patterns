@@ -6,8 +6,6 @@ endif::[]
 
 = Linked Twins
 
-WARNING: This is work in progress and not yet supported by IOTICSpace.
-
 Being able to link twins to other resources is fundamental to put the twin in context with other objects, in order to extract richer information.
 This is a series of patterns documenting how twins can be linked.
 
