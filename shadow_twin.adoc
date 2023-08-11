@@ -7,7 +7,6 @@ endif::[]
 = Shadow Twin
 
 A shadow twin replicates the data and metadata of another twin.
-In other words, a shadow is a twin whose asset is another twin.
 
 image::images/shadow_twin.png[Shadow Twin]
 
