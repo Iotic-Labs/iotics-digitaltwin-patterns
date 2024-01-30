@@ -1,0 +1,24 @@
+= Other patterns
+
+WIP
+
+== Traceability
+continuous data chains over the life cycle 
+
+== Sustainability
+standards and methods for saving CO2 
+
+== Behavioral Twin
+behavioral forecasts from the network 
+
+== Demand & Capacity Management
+fewer bottlenecks, more security 
+
+== Live Quality Loops
+consistency instead of parts tourism 
+
+== Circular Economy
+maximum use of resources  
+
+== Product Carbon Footprint
+primary data for precise CO2 recording
