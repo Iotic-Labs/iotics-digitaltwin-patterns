@@ -1,3 +1,9 @@
+ifdef::env-github[]
+:relfileprefix: 
+:relfilesuffix: .adoc
+xref:index.adoc[Index]
+endif::[]
+
 = Virtual Linked Asset
 
 The Linked Virtual Assets pattern extends the Virtual Asset pattern by introducing the concept of linking virtual assets across multiple owners views of the same real asset. In this pattern, each virtual asset, representing a real-world entity, is matched with counterparts in other systems. The resulting virtualised asset is not isolated but forms a graph of interconnected virtual assets. This approach enhances the holistic understanding of the asset by capturing its relationships and dependencies in a comprehensive manner.
