@@ -1,0 +1,12 @@
+= Virtual Linked Asset
+
+The Linked Virtual Assets pattern extends the Virtual Asset pattern by introducing the concept of linking virtual assets across multiple owners views of the same real asset. In this pattern, each virtual asset, representing a real-world entity, is matched with counterparts in other systems. The resulting virtualised asset is not isolated but forms a graph of interconnected virtual assets. This approach enhances the holistic understanding of the asset by capturing its relationships and dependencies in a comprehensive manner.
+
+== Problem Statement
+While Virtual Asset solves the challenge of consolidating data and metadata, the Linked Virtual Assets pattern addresses the need for discovering and maintaining relationships between virtual assets representing the same real asset. The problem includes the discovery of these links, requiring an independent matching process that identifies corresponding virtual parts of the asset. Furthermore, keeping these links up-to-date poses an additional challenge due to dynamic changes in the underlying systems.
+
+== Solution Overview
+The solution involves the semantic representation of data and metadata, ensuring that each owner of asset data utilizes a common ontology. This common ontology forms the foundation for linking virtual assets across systems. Ontology alignments can be performed using logical inference techniques to establish relationships between virtual assets. Additionally, AI techniques can be employed to discover and validate these relationships, offering a more adaptive and automated approach to maintaining links.
+
+== Application in the Real World
+Imagine a scenario in a global supply chain where information about a product, such as manufacturing data, logistics details, and quality control records, is distributed across various systems maintained by different organizations. The Linked Virtual Assets pattern can be applied to create a connected graph of virtual assets, representing the entire lifecycle of the product. This interconnected representation facilitates a more comprehensive understanding of the product, allowing stakeholders to navigate through its various facets seamlessly. The use of a common ontology ensures consistency, and the dynamic nature of the supply chain is accommodated through AI-driven link discovery and maintenance processes.
